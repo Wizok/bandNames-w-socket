@@ -27,7 +27,7 @@ class SocketService with ChangeNotifier {
   void _initConfig() {
     // Dart client
     // localhost se puede sustituir por la ip del equipo o servidor en caso de que no funcione
-    this._socket = IO.io('http://localhost:3000/', {
+    this._socket = IO.io('https://bands-sucket-app.herokuapp.com/', {
       'transports': ['websocket'],
       'autoConnect': true,
     });
